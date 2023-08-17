@@ -1,0 +1,189 @@
+/*BOTONES*/
+
+.btn1 {
+	width: 30px;
+	height: 30px;
+	color: #C80096;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #C80096;
+	border-radius: 50%;
+	float: left;
+	margin-left: 3px;	
+	align-content: "left";	
+	margin-bottom: 18px;
+  }
+  .btn1:hover {
+	color: #fff;
+	background-color: #C80096;
+  }
+  .btn1 i {
+	pointer-events: none;
+  }
+
+  .btn2 {
+	width: 30px;
+	height: 30px;
+	color: #C80096;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #C80096;
+	border-radius: 50%;
+	margin-left: 10px;	
+	margin-bottom: 18px;
+
+  }
+  .btn2:hover {
+	color: #fff;
+	background-color: #C80096;
+  }
+  .btn2 i {
+	pointer-events: none;
+	display: block;
+  }
+
+  .btn3{
+	display: none;
+  }
+
+  #btnVoz {
+	color: #C80096;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #C80096;
+	position: absolute;
+	transition: color 0.2s, background-color 0.2s ease-in-out;
+  }
+  .btnEntrance {
+	animation-duration: 0.2s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+  }
+  
+  
+  /*BOTONES*/
+
+#btn-mas{
+    display: none;
+}
+.container-voice{
+    position: fixed;
+    bottom: 20px;
+}
+.Acces-voz button, .btn-mas label{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.Acces-voz button:hover{
+    background: #fff;
+    color: #C80096;
+}
+.Acces-voz button{
+	margin-bottom: -16px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .Acces-voz button{
+    margin-bottom: 8px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #C80096;
+    color: #fff;
+    font-size: 24px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(360deg);
+    font-size: 18px;
+}
+
+.activado{
+    background: #E6E5E5;
+    color: #C80096;
+}
+
+.desactivado{
+    background: #C80096;
+    color: #fff;
+}
+
+.toastr {
+	position: fixed;
+    bottom: 200px;
+	display: none;
+	width: 300px;
+	height: 40px;
+	border-radius: 10px;
+	padding-left: 10px;
+	line-height: 40px;
+	margin-left: 10px;
+	float: left;
+	background: #fff;
+	border: 2px solid #C80096;
+	font-family: Century Gothic, sans-serif;
+	color: #C80096;
+	font-weight: bold;
+	margin: 3px;
+}
+
+/*Nuevos*/
+.seleccionar-texto {
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.25rem;
+	color: #C80096;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #C80096;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	transition: color 0.2s, background-color 0.2s ease-in-out;
+  }
+  .seleccionar-texto:hover {
+	color: #fff;
+	background-color: #C80096;
+  }
+  .seleccionar-texto i {
+	pointer-events: none;
+  }
+  .btnEntrance {
+	animation-duration: 0.2s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+  }
+  @keyframes btnEntrance { /* zoomIn */
+	0% {
+	  opacity: 0;
+	  transform: scale3d(0.3, 0.3, 0.3);
+	}
+	100% {
+	  opacity: 1;
+	}    
+  }
+  
+  @media(max-width: 992px) {
+	.container-voice { padding: 1.25rem 6rem; }
+	h1 { font-size: 2.5rem; }
+	h2 { font-size: 1.75rem; }
+  }
+  @media(max-width:768px) {
+	html { font-size: 12px; }
+	.container-voice { padding: 1rem 3rem; }
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.5rem; }
+	hr { margin: 1.5rem 0; }
+  }
+
+  
